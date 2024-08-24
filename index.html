@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Personal Portfolio Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="section__container header__container">
+        <p><span>Hello</span> I'm</p>
+        <h1>Nitin Reddy M</h1>
+	<h2 class="section__title"><span class="dynamic-text"></span></h2>
+        <p>
+          Welcome to my web developer portfolio! I'm Nitin Reddy, a skilled and
+          creative web developer with a passion for creating beautiful,
+          responsive, and user-friendly websites. I've worked on a variety of
+          web projects, ranging from personal blogs to e-commerce platforms.
+        </p>
+        <div class="action__btns">
+        <a href="MyResume.pdf" class="btn active">View my Resume</a>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/me.jpeg" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__title">About <span>Me</span></h2>
+          <p class="section__subtitle">Student at Aditya University!</p>
+          <p class="about__details">
+            Myself Nitin Reddy M, currently pursuing my Btech final year. I'm a skilled web developer with a strong passion for creating beautiful, responsive, and user-	friendly websites. Your expertise spans UI/UX design, frontend development, and cloud development. I  have 	experience working on diverse web projects and are committed to delivering high-quality solutions that meet 	client needs. I'm also goal-oriented, aiming to secure a position in a top MNC, with a particular interest in 	Japanese companies.
+          </p>
+          <button class="btn"><a href="https://www.linkedin.com/in/m-nitinreddy-8685b3236/">More About</a>	</button>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="section__container service__container">
+        <p class="section__subtitle">What I Offer!</p>
+        <h2 class="section__title"><span>My</span> Services</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <i class="ri-smartphone-line"></i>
+            <h4>Web Design</h4>
+            <p>
+              We are dedicated to providing high-quality web design services
+              that are tailored to meet the specific needs of our clients.
+            </p>
+          </div>
+          <div class="service__card">
+            <i class="ri-code-s-slash-line"></i>
+            <h4>Front-End Development</h4>
+            <p>
+              We ensuring that the user-facing aspects of a website or application are both visually appealing and functionally 	      effective.
+            </p>
+          </div>
+          <div class="service__card">
+            <i class="ri-edit-2-line"></i>
+            <h4>Cloud Development</h4>
+            <p>
+              We are leveraging cloud computing technologies to deliver scalable, secure, and efficient solutions. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="section__container project__container">
+        <p class="section__subtitle">Portfolio</p>
+        <h2 class="section__title"><span>Latest</span> Project</h2>
+        <div class="project__grid">
+          <div class="project__card">
+            <img src="assets/project1.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project2.png" alt="project" />
+          </div>
+	  <div class="project__card">
+          <img src="assets/project3.png" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h2 class="section__title">Contact <span>Me!</span></h2>
+          <div class="footer__details">
+            <p>
+              <b>Email:</b> i7396995879@gmail.com<br>
+	      <b>Phn No:</b> +91 7396995879
+            </p>
+          </div>
+          <div class="social">
+		<a href="https://github.com/21A91A1221"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/m-nitinreddy-8685b3236/"><i class="fa-brands fa-linkedin"></i>		</a>
+                <a href="https://www.instagram.com/_nithiiiin_"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+    </footer>
+<script>
+    const textArray = ["UI/UX Designer", "Frontend Developer", "Cloud Developer"];
+    let currentIndex = 0;
+    const dynamicText = document.querySelector(".dynamic-text");
+    function typeEffect() {
+        dynamicText.textContent = textArray[currentIndex];
+        dynamicText.style.width = `${dynamicText.textContent.length}ch`;
+        currentIndex = (currentIndex + 1) % textArray.length;
+    }
+    setInterval(typeEffect, 4000); // Change text every 4 seconds
+    typeEffect(); // Initialize the first text
+    </script>
+  </body>
+</html>
+</script>
+  </body>
+</html>
